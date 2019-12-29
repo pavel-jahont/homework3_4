@@ -1,13 +1,13 @@
 package com.gmail.jahont.pavel;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import impl.HomeWorkServiceImpl;
+import service.HomeWorkService;
+
+public class App {
+
+    public static void main(String[] args) throws Exception {
+        HomeWorkService homeWorkService = new HomeWorkServiceImpl();
+        homeWorkService.runFirstSevice();
+        //homeWorkService.runSecondService();
     }
 }
